@@ -21,6 +21,9 @@ jobs:
     - name: Instalar dependencias
       run: npm install
 
+    - name: Configurar permisos para Jest
+      run: chmod +x ./node_modules/.bin/jest
+
     - name: Ejecutar pruebas unitarias
       run: npx jest
 
