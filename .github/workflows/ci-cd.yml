@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Ejecutar pruebas unitarias
-      run: npm test
+      run: npx jest
 
     - name: Subir página a GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
